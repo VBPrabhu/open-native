@@ -1,6 +1,6 @@
 #OpenNAtive plugin for Android and iOS 8 Cordova.
 
-The plugin allows you to open Settings view from Android Cordova application and to open Native App settings view from iOS 8 Cordova application. Based on https://github.com/raulduran/VideoPlayer.
+The plugin allows you to open Settings view from Android Cordova application and to open Native App settings view from iOS 8 Cordova application. 
 
 ##Adding the Plugin to your project
 
@@ -13,11 +13,15 @@ cordova plugin rm cordova-plugin-open-native-settings
 cordova.plugins.settings.open(success_callback, failure_callback);
 ###Example for iOS and Android
 
-if(typeof cordova.plugins.settings.openSetting != undefined){
-    cordova.plugins.settings.open(function(){
-            console.log("opened settings")
-        },
-        function(){
-            console.log("failed to open settings")
-        });
+export var cordova: any;
+
+interface Window {
+  settings: any;
 }
+declare var window: Window;
+
+Plugin call:
+
+ 	this._platform.ready().then(() => {
+           window.settings.openSettings("touchid");
+      });
