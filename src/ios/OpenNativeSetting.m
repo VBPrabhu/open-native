@@ -1,7 +1,7 @@
-#import "CDVSettings.h"
+#import "OpenNativeSetting.h"
 #import <Cordova/CDV.h>
 
-@implementation CDVSettings
+@implementation OpenNativeSetting
 
 - (void)openSettings:(CDVInvokedUrlCommand*)command {
     

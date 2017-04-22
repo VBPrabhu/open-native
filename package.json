@@ -13,6 +13,8 @@
     "url": "git+https://github.com/VBPrabhu/open-native.git"
   },
   "keywords": [
+    "cordova",
+    "settings",
     "ecosystem:cordova",
     "cordova-ios"
   ],
