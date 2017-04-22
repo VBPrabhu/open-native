@@ -1,0 +1,25 @@
+{
+  "name": "opennativesetting",
+  "version": "0.0.1",
+  "description": "Open native setting page",
+  "cordova": {
+    "id": "cordova-open-native-settings",
+    "platforms": [
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VBPrabhu/open-native.git"
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-ios"
+  ],
+  "author": "Venkat Prabhu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VBPrabhu/open-native/issues"
+  },
+  "homepage": "https://github.com/VBPrabhu/open-native#readme"
+}
