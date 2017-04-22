@@ -2,7 +2,7 @@
 var exec = require('cordova/exec');
 
 module.exports = {
-    openNative: function(setvalue) {
+    openSettings: function(setvalue) {
         exec(null, null, "Settings", "openSettings", [setvalue]);
     }
 };
